@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* É possível escrever tudo em um atalho
+  background: color image repeat position/size  */
+
+  /*background-image: url(./assets/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;*/
+
+  background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
+}
+body * {
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+}
+
+#caixa0 {
+  width: 360px;
+  margin: 56px auto 0px;
+  padding: 0 24px; /* preenchimentos laterais*/
+}
+#caixa1 {
+  text-align: center;
+  padding: 24px;
+}
+#caixa1 img {
+  width: 112px;
+}
+#caixa1 p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+/*lista*/
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /*adiciona uma distância entre os elementos de uma coluna ou de caixas em linha*/
+}
+ul li a {
+  display: flex;
+  align-items: center; /*alinha elementos no centro*/
+  justify-content: center; /*alinha elementos no eixo principal*/
+  padding: 16px 24px;
+  background-color: rgba(255, 255, 255, 0.1); /*colore o fundo da caixa*/
+  border: 1px solid rgba(255, 255, 255, 0.5); /*adiciona uma borda fina*/
+  border-radius: 8px; /* adiciona borda redonda*/
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(
+    4px
+  ); /*adciona embaçar ao passar o mouse em cima*/
+  text-decoration: none; /*adiciona ou retira linhas no texto*/
+  font-weight: 500;
+
+  transition: backgroud 0.5s;
+}
+/*pseudo selector - sudo selector = muda as coisas quando coloca o mouse em cima*/
+
+ul li a:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid white;
+}
