@@ -5,8 +5,10 @@
 <br>
 <h2>Tecnologias no projeto</h2>
 Esse projeto foi desenvolvido utilizando as técnologias:
-- HTML
-- CSS
-- Javascript 
-- Figma
+<ul>
+    - HTML
+    - CSS
+    - Javascript
+    - Figma
+</ul>
 
