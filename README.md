@@ -6,9 +6,9 @@
 <h2>Tecnologias no projeto</h2>
 Esse projeto foi desenvolvido utilizando as técnologias:
 <ul>
-    - HTML
-    - CSS
-    - Javascript
-    - Figma
+    <li> HTML
+    <li> CSS
+    <li> Javascript
+    <li> Figma
 </ul>
 
