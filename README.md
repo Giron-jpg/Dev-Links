@@ -5,6 +5,7 @@
 <br>
 <h2>Tecnologias no projeto</h2>
 Esse projeto foi desenvolvido utilizando as técnologias:
+<br>
 <ul>
     <li> HTML
     <li> CSS
