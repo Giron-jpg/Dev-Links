@@ -15,6 +15,6 @@ Esse projeto está em desenvolvimento utilizando técnologias como:
 
 <h2>Prévia do projeto</h2>
 <picture>
-    <img src = "" type="image/img">
+    <img src = "VSCode/.github/preview1.PNG" alt="Previa do projeto">
 
 </picture>
