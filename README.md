@@ -1,10 +1,10 @@
-<h1 align ='center'>Redes</h1>
+<h1 align ='center'>Links</h1>
 <br>
 <h2>Descrição do Projeto</h2>
-<p>O intuíto deste projeto é concentrar uma lista de links referentes a um perfil pessoal. Podendo variar entre páginas de redes sociais ou para outros projetos desenvolvidos</p>
+<p>Este projeto tem o intuito de ser um site que concentrar uma lista de links referentes a um perfil pessoal. Podendo variar entre links para páginas de redes sociais ou para sites com projetos desenvolvidos.</p>
 <br>
 <h2>Tecnologias no projeto</h2>
-Esse projeto está sendo desenvolvido utilizando as técnologias:
+Esse projeto está em desenvolvimento utilizando técnologias como:
 <br>
 <ul>
     <li> HTML
@@ -13,3 +13,8 @@ Esse projeto está sendo desenvolvido utilizando as técnologias:
     <li> Figma
 </ul>
 
+<h2>Prévia do projeto</h2>
+<picture>
+    <img src = "VSCode/assets/previa1" type="image/img">
+
+</picture>
