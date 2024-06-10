@@ -21,7 +21,8 @@ body * {
 }
 
 #caixa0 {
-  width: 360px;
+  min-width: 320px;
+  max-width: 360px;
   margin: 56px auto 0px;
   padding: 0 24px; /* preenchimentos laterais*/
 }
