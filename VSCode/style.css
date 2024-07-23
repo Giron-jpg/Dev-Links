@@ -42,11 +42,24 @@ body * {
 }
 
 .toggle{
-  padding: 12px;
   width: 50px;
   border: 2px solid rgba(255, 255, 255, 0.7);
   border-radius: 25px;
   margin: 16px auto 16px;
+}
+
+div.toggle > i#moon{
+  margin-left: 4px;
+}
+div.toggle > i#sun{
+  margin-left: 6px;
+}
+div.toggle > div#ball{
+  display: flex;
+  background-color: red;
+  width: 4px;
+  padding: 4px;
+  border-radius: 50%;
 }
 
 ul {
