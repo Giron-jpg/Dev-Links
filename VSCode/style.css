@@ -32,7 +32,7 @@ body * {
 }
 #caixa1 img {
   width: 112px;
-  box-shadow: 0px 0px 0px 4px lightgray;
+  box-shadow: 0px 0px 2px 3px lightgray;
   border-radius: 50%;
 }
 #caixa1 p {
@@ -69,15 +69,6 @@ body.claro{
   background-position: top center;
   background-size: cover;
 }
-
-div#toggle.claro div#ball{
-  left: 18.5px;
-  background-color: rgba(99, 99, 99, 0.404);
-}
-div#toggle.claro div#toggle{
-  color: black;
-}
-
 
 ul {
   list-style: none;
@@ -129,12 +120,12 @@ ul li a:hover {
   transition: 0.5s;
 }
 
-
 footer{
   text-align: center;
   
 }
 
+/*Configurações para mudanças no modo escuro para o claro*/
 body.claro {
   /* É possível escrever tudo em um atalho
   background: color image repeat position/size  */
@@ -145,23 +136,27 @@ body.claro {
 }
 
 #caixa1>img.claro {
-  box-shadow: 0px 0px 0px 4px rgba(107, 107, 107, 0.514);
+  box-shadow: 0px 0px 2px 3px rgba(53, 53, 53, 0.514);
+}
+
+div#toggle>div#ball.claro {
+  left: 18.5px;
+  background-color: rgba(255, 255, 255, 0.966);
 }
 
 div#toggle.claro{
   border: 1px solid rgba(8, 7, 7, 0.568);
-  background-color: rgba(0, 0, 0, 0.466);
-  color: black;
+  background-color: rgba(0, 0, 0, 0.267);
 }
 
 div#toggle>i.claro{
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 ul li a.claro {
   color: black;
   background-color: rgba(7, 5, 5, 0.1); /*colore o fundo da caixa*/
-  border: 1px solid rgba(17, 13, 13, 0.5); /*adiciona uma borda fina*/
+  border: 1px solid #110d0d80; /*adiciona uma borda fina*/
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(
     4px
