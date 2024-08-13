@@ -41,26 +41,43 @@ body * {
   margin-top: 8px;
 }
 
-.toggle{
-  width: 50px;
-  border: 2px solid rgba(255, 255, 255, 0.7);
-  border-radius: 25px;
+div#toggle{
+  display: flex;
+  position: relative;
+  width: 40px;
+  height: 20px;
+  border: 1px solid rgba(201, 195, 195, 0.911);
+  border-radius: 30px;
   margin: 16px auto 16px;
+  justify-content: space-around;
+  align-items: center;
 }
 
-div.toggle > i#moon{
-  margin-left: 4px;
-}
-div.toggle > i#sun{
-  margin-left: 6px;
-}
-div.toggle > div#ball{
-  display: flex;
-  background-color: red;
-  width: 4px;
-  padding: 4px;
+div#toggle > div#ball{
+  position: absolute;
+  left: 0.5px;
+  background-color: rgba(230, 230, 230, 0.521);
+  padding: 9px;
   border-radius: 50%;
+  transform: scale(.9);
+  cursor: pointer;
+  transition: 0.5s;
 }
+body.claro{
+  background-image: url(assets/bg-mobile-light.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+div#toggle.claro div#ball{
+  left: 18.5px;
+  background-color: rgba(99, 99, 99, 0.404);
+}
+div#toggle.claro div#toggle{
+  color: black;
+}
+
 
 ul {
   list-style: none;
@@ -111,12 +128,59 @@ ul li a:hover {
   align-items: center;
   transition: 0.5s;
 }
-.links:hover{
-  background-color:rgba(255, 255, 255, 0.1);
-  transition: all 0.7s;
-}
+
 
 footer{
   text-align: center;
   
+}
+
+body.claro {
+  /* É possível escrever tudo em um atalho
+  background: color image repeat position/size  */
+  background-image: url(./assets/bg-mobile-light.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+#caixa1>img.claro {
+  box-shadow: 0px 0px 0px 4px rgba(107, 107, 107, 0.514);
+}
+
+div#toggle.claro{
+  border: 1px solid rgba(8, 7, 7, 0.568);
+  background-color: rgba(0, 0, 0, 0.466);
+  color: black;
+}
+
+div#toggle>i.claro{
+  color: black;
+}
+
+ul li a.claro {
+  color: black;
+  background-color: rgba(7, 5, 5, 0.1); /*colore o fundo da caixa*/
+  border: 1px solid rgba(17, 13, 13, 0.5); /*adiciona uma borda fina*/
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(
+    4px
+  )
+}
+ul li a:hover.claro {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid rgb(7, 5, 5);
+}
+
+.social-links>a>i.claro{
+  color: black;
+}
+
+.links:hover.claro{
+  background-color:rgba(2, 1, 1, 0.1);
+  transition: all 0.7s;
+}
+
+footer>p.claro{
+  color: black;
 }
