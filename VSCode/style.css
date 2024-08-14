@@ -44,6 +44,7 @@ body * {
 div#toggle{
   display: flex;
   position: relative;
+  z-index: 2;
   width: 40px;
   height: 20px;
   border: 1px solid rgba(201, 195, 195, 0.911);
@@ -56,12 +57,22 @@ div#toggle{
 div#toggle > div#ball{
   position: absolute;
   left: 0.5px;
-  background-color: rgba(230, 230, 230, 0.521);
+  z-index: 1;
+  background-color: rgba(225, 226, 225, 0.281);
   padding: 9px;
   border-radius: 50%;
   transform: scale(.9);
   cursor: pointer;
   transition: 0.5s;
+}
+
+i#moon{
+  position: relative;
+  z-index: 2;
+}
+i#sun{
+  position: relative;
+  z-index: 2;
 }
 body.claro{
   background-image: url(assets/bg-mobile-light.jpg);
@@ -120,9 +131,16 @@ ul li a:hover {
   transition: 0.5s;
 }
 
+.links:hover{
+  background-color: #ffffff2d;
+}
+
 footer{
   text-align: center;
-  
+}
+
+p#txt{
+  color: white;
 }
 
 /*Configurações para mudanças no modo escuro para o claro*/
@@ -140,7 +158,7 @@ body.claro {
 }
 
 div#toggle>div#ball.claro {
-  left: 18.5px;
+  left: 18.9px;
   background-color: rgba(255, 255, 255, 0.966);
 }
 
@@ -158,24 +176,22 @@ ul li a.claro {
   background-color: rgba(7, 5, 5, 0.1); /*colore o fundo da caixa*/
   border: 1px solid #110d0d80; /*adiciona uma borda fina*/
   backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(
-    4px
-  )
+  -webkit-backdrop-filter: blur(4px)
 }
+
 ul li a:hover.claro {
   background: rgba(255, 255, 255, 0.05);
   border: 1.5px solid rgb(7, 5, 5);
 }
 
-.social-links>a>i.claro{
+.social-links>a>i.claro {
   color: black;
 }
 
-.links:hover.claro{
-  background-color:rgba(2, 1, 1, 0.1);
-  transition: all 0.7s;
+.links:hover.claro {
+  background-color:rgba(0, 0, 0, 0.7);
 }
 
-footer>p.claro{
+p#txt.claro {
   color: black;
 }
